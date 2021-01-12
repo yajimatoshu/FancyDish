@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		E57FA32E25ADD94300E487A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57FA32C25ADD94300E487A7 /* LaunchScreen.storyboard */; };
 		E57FA33925ADD94300E487A7 /* FancyDishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FA33825ADD94300E487A7 /* FancyDishTests.swift */; };
 		E57FA34425ADD94300E487A7 /* FancyDishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FA34325ADD94300E487A7 /* FancyDishUITests.swift */; };
+		E57FA35625ADEAE100E487A7 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E57FA35525ADEAE100E487A7 /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E57FA35625ADEAE100E487A7 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +146,9 @@
 			dependencies = (
 			);
 			name = FancyDish;
+			packageProductDependencies = (
+				E57FA35525ADEAE100E487A7 /* RxSwift */,
+			);
 			productName = FancyDish;
 			productReference = E57FA31E25ADD94200E487A7 /* FancyDish.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = E57FA31525ADD94200E487A7;
+			packageReferences = (
+				E57FA35425ADEAE100E487A7 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = E57FA31F25ADD94200E487A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -436,7 +444,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FancyDish/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -444,6 +454,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yajuma.toshu.dev.FancyDish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -454,7 +465,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FancyDish/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -462,6 +475,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yajuma.toshu.dev.FancyDish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -587,6 +601,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E57FA35425ADEAE100E487A7 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E57FA35525ADEAE100E487A7 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E57FA35425ADEAE100E487A7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E57FA31625ADD94200E487A7 /* Project object */;
 }
