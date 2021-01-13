@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E53C48DC25AF3E2A00E27388 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C48DB25AF3E2A00E27388 /* TabBarController.swift */; };
 		E57FA32225ADD94200E487A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FA32125ADD94200E487A7 /* AppDelegate.swift */; };
-		E57FA32425ADD94200E487A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FA32325ADD94200E487A7 /* SceneDelegate.swift */; };
 		E57FA32625ADD94200E487A7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FA32525ADD94200E487A7 /* HomeViewController.swift */; };
 		E57FA32925ADD94200E487A7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57FA32725ADD94200E487A7 /* Home.storyboard */; };
 		E57FA32B25ADD94300E487A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57FA32A25ADD94300E487A7 /* Assets.xcassets */; };
@@ -36,9 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E53C48DB25AF3E2A00E27388 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E57FA31E25ADD94200E487A7 /* FancyDish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FancyDish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57FA32125ADD94200E487A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E57FA32325ADD94200E487A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E57FA32525ADD94200E487A7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E57FA32825ADD94200E487A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		E57FA32A25ADD94300E487A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,9 +105,7 @@
 				E57FA32A25ADD94300E487A7 /* Assets.xcassets */,
 				E57FA32F25ADD94300E487A7 /* Info.plist */,
 				E57FA32C25ADD94300E487A7 /* LaunchScreen.storyboard */,
-				E57FA32725ADD94200E487A7 /* Home.storyboard */,
-				E57FA32325ADD94200E487A7 /* SceneDelegate.swift */,
-				E57FA32525ADD94200E487A7 /* HomeViewController.swift */,
+				E53C48DB25AF3E2A00E27388 /* TabBarController.swift */,
 				E57FA35D25ADECB100E487A7 /* ViewControllers */,
 				E57FA35E25ADECBB00E487A7 /* ViewModels */,
 			);
@@ -135,6 +133,8 @@
 		E57FA35D25ADECB100E487A7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E57FA32725ADD94200E487A7 /* Home.storyboard */,
+				E57FA32525ADD94200E487A7 /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -283,8 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E57FA32625ADD94200E487A7 /* HomeViewController.swift in Sources */,
+				E53C48DC25AF3E2A00E27388 /* TabBarController.swift in Sources */,
 				E57FA32225ADD94200E487A7 /* AppDelegate.swift in Sources */,
-				E57FA32425ADD94200E487A7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +390,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -445,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -461,8 +461,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S8WY4ZH996;
 				INFOPLIST_FILE = FancyDish/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -482,8 +482,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S8WY4ZH996;
 				INFOPLIST_FILE = FancyDish/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
