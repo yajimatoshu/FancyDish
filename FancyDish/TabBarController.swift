@@ -15,11 +15,18 @@ class TabBarController: UITabBarController {
         // ページを格納する配列
         var viewControllers: [UIViewController] = []
         
-        // 1ページ目になるViewController
-        let firstSB = UIStoryboard(name: "Home", bundle: nil)
-        let firstVC = firstSB.instantiateInitialViewController()! as UINavigationController
-        firstVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
-        viewControllers.append(firstVC)
+        // ホーム画面
+        let homeSB = UIStoryboard(name: "Home", bundle: nil)
+        if let homeVC = homeSB.instantiateInitialViewController() as? UINavigationController{
+            homeVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
+            viewControllers.append(homeVC)
+        }
+        
+        let fancyDishMovieSB = UIStoryboard(name: "FancyDishMovie", bundle: nil)
+        if let fancyDishMovieVC = fancyDishMovieSB.instantiateInitialViewController() as? UINavigationController{
+            fancyDishMovieVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 2)
+            viewControllers.append(fancyDishMovieVC)
+        }
         
         setViewControllers(viewControllers, animated: false)
     }

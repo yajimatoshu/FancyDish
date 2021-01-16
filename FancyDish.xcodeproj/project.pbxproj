@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5129B2825B08BFB002DC0DA /* MoviePost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5129B2725B08BFB002DC0DA /* MoviePost.storyboard */; };
+		E5129B2D25B08C08002DC0DA /* MoviePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5129B2C25B08C08002DC0DA /* MoviePostViewController.swift */; };
+		E5129B3225B09AD6002DC0DA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5129B3125B09AD6002DC0DA /* HomeViewModel.swift */; };
 		E53C48DC25AF3E2A00E27388 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C48DB25AF3E2A00E27388 /* TabBarController.swift */; };
+		E55A61D025B081E300AA1AF3 /* FancyDishMovie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E55A61CF25B081E300AA1AF3 /* FancyDishMovie.storyboard */; };
+		E55A61D525B0820100AA1AF3 /* FancyDishMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55A61D425B0820100AA1AF3 /* FancyDishMovieViewController.swift */; };
+		E56404DD25B20869004B2E05 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E56404DC25B20869004B2E05 /* Moya */; };
+		E56404DF25B20869004B2E05 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E56404DE25B20869004B2E05 /* RxMoya */; };
 		E57FA32225ADD94200E487A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FA32125ADD94200E487A7 /* AppDelegate.swift */; };
 		E57FA32625ADD94200E487A7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FA32525ADD94200E487A7 /* HomeViewController.swift */; };
 		E57FA32925ADD94200E487A7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57FA32725ADD94200E487A7 /* Home.storyboard */; };
@@ -15,7 +22,14 @@
 		E57FA32E25ADD94300E487A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57FA32C25ADD94300E487A7 /* LaunchScreen.storyboard */; };
 		E57FA33925ADD94300E487A7 /* FancyDishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FA33825ADD94300E487A7 /* FancyDishTests.swift */; };
 		E57FA34425ADD94300E487A7 /* FancyDishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FA34325ADD94300E487A7 /* FancyDishUITests.swift */; };
-		E57FA35625ADEAE100E487A7 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E57FA35525ADEAE100E487A7 /* RxSwift */; };
+		E5A54A0D25B31FAC00311D14 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E5A54A0C25B31FAC00311D14 /* RxCocoa */; };
+		E5A54A0F25B31FAC00311D14 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E5A54A0E25B31FAC00311D14 /* RxSwift */; };
+		E5C367B425B2CC3D0003E0CE /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5C367B325B2CC3D0003E0CE /* Keys.plist */; };
+		E5C367BA25B2D01B0003E0CE /* Gourmet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C367B925B2D01B0003E0CE /* Gourmet.swift */; };
+		E5C367C025B2D53C0003E0CE /* PlistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C367BF25B2D53C0003E0CE /* PlistManager.swift */; };
+		E5C367C825B2DD4D0003E0CE /* GourmetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C367C725B2DD4D0003E0CE /* GourmetResponse.swift */; };
+		E5C367D025B2EE030003E0CE /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C367CF25B2EE030003E0CE /* ApiRequest.swift */; };
+		E5C367D525B30F640003E0CE /* GourmetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C367D425B30F640003E0CE /* GourmetModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E5129B2725B08BFB002DC0DA /* MoviePost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MoviePost.storyboard; sourceTree = "<group>"; };
+		E5129B2C25B08C08002DC0DA /* MoviePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePostViewController.swift; sourceTree = "<group>"; };
+		E5129B3125B09AD6002DC0DA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E53C48DB25AF3E2A00E27388 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		E55A61CF25B081E300AA1AF3 /* FancyDishMovie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FancyDishMovie.storyboard; sourceTree = "<group>"; };
+		E55A61D425B0820100AA1AF3 /* FancyDishMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyDishMovieViewController.swift; sourceTree = "<group>"; };
 		E57FA31E25ADD94200E487A7 /* FancyDish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FancyDish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57FA32125ADD94200E487A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E57FA32525ADD94200E487A7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +69,12 @@
 		E57FA33F25ADD94300E487A7 /* FancyDishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FancyDishUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57FA34325ADD94300E487A7 /* FancyDishUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyDishUITests.swift; sourceTree = "<group>"; };
 		E57FA34525ADD94300E487A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5C367B325B2CC3D0003E0CE /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		E5C367B925B2D01B0003E0CE /* Gourmet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gourmet.swift; sourceTree = "<group>"; };
+		E5C367BF25B2D53C0003E0CE /* PlistManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistManager.swift; sourceTree = "<group>"; };
+		E5C367C725B2DD4D0003E0CE /* GourmetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourmetResponse.swift; sourceTree = "<group>"; };
+		E5C367CF25B2EE030003E0CE /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		E5C367D425B30F640003E0CE /* GourmetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourmetModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +82,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E57FA35625ADEAE100E487A7 /* RxSwift in Frameworks */,
+				E5A54A0D25B31FAC00311D14 /* RxCocoa in Frameworks */,
+				E56404DF25B20869004B2E05 /* RxMoya in Frameworks */,
+				E5A54A0F25B31FAC00311D14 /* RxSwift in Frameworks */,
+				E56404DD25B20869004B2E05 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,8 +132,11 @@
 				E57FA32125ADD94200E487A7 /* AppDelegate.swift */,
 				E57FA32A25ADD94300E487A7 /* Assets.xcassets */,
 				E57FA32F25ADD94300E487A7 /* Info.plist */,
+				E5C367B325B2CC3D0003E0CE /* Keys.plist */,
 				E57FA32C25ADD94300E487A7 /* LaunchScreen.storyboard */,
 				E53C48DB25AF3E2A00E27388 /* TabBarController.swift */,
+				E5C367BE25B2D4CC0003E0CE /* Common */,
+				E5C367B825B2CFE00003E0CE /* Models */,
 				E57FA35D25ADECB100E487A7 /* ViewControllers */,
 				E57FA35E25ADECBB00E487A7 /* ViewModels */,
 			);
@@ -135,6 +166,10 @@
 			children = (
 				E57FA32725ADD94200E487A7 /* Home.storyboard */,
 				E57FA32525ADD94200E487A7 /* HomeViewController.swift */,
+				E55A61CF25B081E300AA1AF3 /* FancyDishMovie.storyboard */,
+				E55A61D425B0820100AA1AF3 /* FancyDishMovieViewController.swift */,
+				E5129B2725B08BFB002DC0DA /* MoviePost.storyboard */,
+				E5129B2C25B08C08002DC0DA /* MoviePostViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -142,8 +177,28 @@
 		E57FA35E25ADECBB00E487A7 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				E5129B3125B09AD6002DC0DA /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E5C367B825B2CFE00003E0CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E5C367B925B2D01B0003E0CE /* Gourmet.swift */,
+				E5C367C725B2DD4D0003E0CE /* GourmetResponse.swift */,
+				E5C367D425B30F640003E0CE /* GourmetModel.swift */,
+				E5C367CF25B2EE030003E0CE /* ApiRequest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E5C367BE25B2D4CC0003E0CE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E5C367BF25B2D53C0003E0CE /* PlistManager.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +218,10 @@
 			);
 			name = FancyDish;
 			packageProductDependencies = (
-				E57FA35525ADEAE100E487A7 /* RxSwift */,
+				E56404DC25B20869004B2E05 /* Moya */,
+				E56404DE25B20869004B2E05 /* RxMoya */,
+				E5A54A0C25B31FAC00311D14 /* RxCocoa */,
+				E5A54A0E25B31FAC00311D14 /* RxSwift */,
 			);
 			productName = FancyDish;
 			productReference = E57FA31E25ADD94200E487A7 /* FancyDish.app */;
@@ -237,7 +295,8 @@
 			);
 			mainGroup = E57FA31525ADD94200E487A7;
 			packageReferences = (
-				E57FA35425ADEAE100E487A7 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				E56404DB25B20869004B2E05 /* XCRemoteSwiftPackageReference "Moya" */,
+				E5A54A0B25B31FAC00311D14 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = E57FA31F25ADD94200E487A7 /* Products */;
 			projectDirPath = "";
@@ -256,8 +315,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E57FA32E25ADD94300E487A7 /* LaunchScreen.storyboard in Resources */,
+				E55A61D025B081E300AA1AF3 /* FancyDishMovie.storyboard in Resources */,
+				E5C367B425B2CC3D0003E0CE /* Keys.plist in Resources */,
 				E57FA32B25ADD94300E487A7 /* Assets.xcassets in Resources */,
 				E57FA32925ADD94200E487A7 /* Home.storyboard in Resources */,
+				E5129B2825B08BFB002DC0DA /* MoviePost.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,8 +345,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E57FA32625ADD94200E487A7 /* HomeViewController.swift in Sources */,
+				E5129B3225B09AD6002DC0DA /* HomeViewModel.swift in Sources */,
+				E55A61D525B0820100AA1AF3 /* FancyDishMovieViewController.swift in Sources */,
+				E5C367D525B30F640003E0CE /* GourmetModel.swift in Sources */,
+				E5129B2D25B08C08002DC0DA /* MoviePostViewController.swift in Sources */,
+				E5C367C825B2DD4D0003E0CE /* GourmetResponse.swift in Sources */,
+				E5C367C025B2D53C0003E0CE /* PlistManager.swift in Sources */,
 				E53C48DC25AF3E2A00E27388 /* TabBarController.swift in Sources */,
 				E57FA32225ADD94200E487A7 /* AppDelegate.swift in Sources */,
+				E5C367D025B2EE030003E0CE /* ApiRequest.swift in Sources */,
+				E5C367BA25B2D01B0003E0CE /* Gourmet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,20 +689,43 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E57FA35425ADEAE100E487A7 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		E56404DB25B20869004B2E05 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.0;
+			};
+		};
+		E5A54A0B25B31FAC00311D14 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
+				minimumVersion = 5.1.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E57FA35525ADEAE100E487A7 /* RxSwift */ = {
+		E56404DC25B20869004B2E05 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E57FA35425ADEAE100E487A7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = E56404DB25B20869004B2E05 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		E56404DE25B20869004B2E05 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E56404DB25B20869004B2E05 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		E5A54A0C25B31FAC00311D14 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5A54A0B25B31FAC00311D14 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		E5A54A0E25B31FAC00311D14 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5A54A0B25B31FAC00311D14 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
