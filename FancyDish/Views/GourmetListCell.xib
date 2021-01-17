@@ -21,9 +21,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="381" height="100"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ix-5H-64t">
-                                <rect key="frame" x="0.0" y="0.0" width="381" height="40"/>
+                                <rect key="frame" x="0.0" y="0.0" width="381" height="20"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="4n3-nd-huQ"/>
+                                    <constraint firstAttribute="height" constant="20" id="4n3-nd-huQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPW-Ka-vpb">
+                                <rect key="frame" x="0.0" y="20" width="381" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7Vo-e8-Phj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -35,7 +44,10 @@
                             <constraint firstItem="7Ix-5H-64t" firstAttribute="top" secondItem="pf9-Od-Cns" secondAttribute="top" id="1Na-BU-jFQ"/>
                             <constraint firstItem="7Ix-5H-64t" firstAttribute="leading" secondItem="pf9-Od-Cns" secondAttribute="leading" id="PjR-8D-dC8"/>
                             <constraint firstAttribute="height" constant="100" id="Vjc-Vg-QjU"/>
+                            <constraint firstItem="BPW-Ka-vpb" firstAttribute="leading" secondItem="pf9-Od-Cns" secondAttribute="leading" id="YPs-dr-CRS"/>
+                            <constraint firstAttribute="trailing" secondItem="BPW-Ka-vpb" secondAttribute="trailing" id="Zg6-ah-DH6"/>
                             <constraint firstAttribute="trailing" secondItem="7Ix-5H-64t" secondAttribute="trailing" id="iEX-RN-Pdl"/>
+                            <constraint firstItem="BPW-Ka-vpb" firstAttribute="top" secondItem="7Ix-5H-64t" secondAttribute="bottom" id="xDM-el-2CI"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -48,6 +60,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="budgetLabel" destination="BPW-Ka-vpb" id="2LD-EA-Zn6"/>
                 <outlet property="shopNameLabel" destination="7Ix-5H-64t" id="N68-AT-9PX"/>
             </connections>
             <point key="canvasLocation" x="110.86956521739131" y="84.040178571428569"/>

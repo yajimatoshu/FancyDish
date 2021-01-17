@@ -17,6 +17,11 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         bind()
         setupTableView()
+        setupNavigationBar()
+    }
+    
+    private func setupNavigationBar() {
+        navigationItem.title = "検索結果一覧"
     }
     
     private func setupTableView() {
@@ -42,6 +47,7 @@ extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "GourmetListCell") as? GourmetListCell {
             cell.shopNameLabel.text = viewModel.gourmetResults?.shop[indexPath.row].name
+            cell.budgetLabel.text = viewModel.gourmetResults?.shop[indexPath.row].budget.average
             return cell
         }
         return UITableViewCell()
