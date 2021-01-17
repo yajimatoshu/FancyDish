@@ -10,6 +10,8 @@
 		E5129B2825B08BFB002DC0DA /* MoviePost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5129B2725B08BFB002DC0DA /* MoviePost.storyboard */; };
 		E5129B2D25B08C08002DC0DA /* MoviePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5129B2C25B08C08002DC0DA /* MoviePostViewController.swift */; };
 		E5129B3225B09AD6002DC0DA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5129B3125B09AD6002DC0DA /* HomeViewModel.swift */; };
+		E517BB9A25B47052008EC057 /* GourmetListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E517BB9825B47052008EC057 /* GourmetListCell.swift */; };
+		E517BB9B25B47052008EC057 /* GourmetListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E517BB9925B47052008EC057 /* GourmetListCell.xib */; };
 		E53C48DC25AF3E2A00E27388 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C48DB25AF3E2A00E27388 /* TabBarController.swift */; };
 		E55A61D025B081E300AA1AF3 /* FancyDishMovie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E55A61CF25B081E300AA1AF3 /* FancyDishMovie.storyboard */; };
 		E55A61D525B0820100AA1AF3 /* FancyDishMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55A61D425B0820100AA1AF3 /* FancyDishMovieViewController.swift */; };
@@ -54,6 +56,8 @@
 		E5129B2725B08BFB002DC0DA /* MoviePost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MoviePost.storyboard; sourceTree = "<group>"; };
 		E5129B2C25B08C08002DC0DA /* MoviePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePostViewController.swift; sourceTree = "<group>"; };
 		E5129B3125B09AD6002DC0DA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E517BB9825B47052008EC057 /* GourmetListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourmetListCell.swift; sourceTree = "<group>"; };
+		E517BB9925B47052008EC057 /* GourmetListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GourmetListCell.xib; sourceTree = "<group>"; };
 		E53C48DB25AF3E2A00E27388 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E55A61CF25B081E300AA1AF3 /* FancyDishMovie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FancyDishMovie.storyboard; sourceTree = "<group>"; };
 		E55A61D425B0820100AA1AF3 /* FancyDishMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyDishMovieViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +112,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E517BB9725B4701D008EC057 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E517BB9825B47052008EC057 /* GourmetListCell.swift */,
+				E517BB9925B47052008EC057 /* GourmetListCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E5682A5F25B420FB0065882B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +179,7 @@
 				E5C367BE25B2D4CC0003E0CE /* Common */,
 				E5C367B825B2CFE00003E0CE /* Models */,
 				E57FA35D25ADECB100E487A7 /* ViewControllers */,
+				E517BB9725B4701D008EC057 /* Views */,
 				E57FA35E25ADECBB00E487A7 /* ViewModels */,
 			);
 			path = FancyDish;
@@ -341,6 +355,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E517BB9B25B47052008EC057 /* GourmetListCell.xib in Resources */,
 				E57FA32E25ADD94300E487A7 /* LaunchScreen.storyboard in Resources */,
 				E55A61D025B081E300AA1AF3 /* FancyDishMovie.storyboard in Resources */,
 				E5C367B425B2CC3D0003E0CE /* Keys.plist in Resources */,
@@ -373,6 +388,7 @@
 			files = (
 				E57FA32625ADD94200E487A7 /* HomeViewController.swift in Sources */,
 				E5129B3225B09AD6002DC0DA /* HomeViewModel.swift in Sources */,
+				E517BB9A25B47052008EC057 /* GourmetListCell.swift in Sources */,
 				E55A61D525B0820100AA1AF3 /* FancyDishMovieViewController.swift in Sources */,
 				E5C367D525B30F640003E0CE /* GourmetModel.swift in Sources */,
 				E5129B2D25B08C08002DC0DA /* MoviePostViewController.swift in Sources */,

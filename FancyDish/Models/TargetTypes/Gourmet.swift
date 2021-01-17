@@ -40,7 +40,8 @@ extension Gourmet: TargetType {
         case .gourmet:
             let param = ["key": PlistManager.gourmetApiKey ?? "",
                          "format": "json",
-                         "name": "dinner"]
+                         "budget": "B013, B014",
+                         "count": "100"]
             return .requestParameters(parameters: param, encoding: URLEncoding.default)
         }
     }

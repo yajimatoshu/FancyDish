@@ -17,6 +17,7 @@ struct GourmetResponse: Codable {
         
         struct Shop: Codable {
             let id: String
+            let name: String
             let logoImage: String
             let nameKana: String
             let address: String
