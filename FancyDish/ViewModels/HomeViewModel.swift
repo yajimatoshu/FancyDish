@@ -2,7 +2,7 @@
 //  HomeViewModel.swift
 //  FancyDish
 //
-//  Created by SHUTO NISHIYAMA on 2021/01/15.
+//  Created by yajima toshu on 2021/01/15.
 //
 
 import Foundation
@@ -13,10 +13,15 @@ class HomeViewModel {
     private let disposeBag = DisposeBag()
     var model = GourmetModel()
     
-    func fetchGourmet(callBack: @escaping (_ result: GourmetResponse) -> Void) {
-        model.fetchGourmet().subscribe(onNext: {[weak self] (result) in
-            print(result)
-            callBack(result)
+    func fetchGourmet(callBack: @escaping (_ result: GourmetResponse.GourmetResponseResults) -> Void) {
+        model.fetchGourmet().subscribe({ [weak self] result in
+            switch result {
+            case .success(let response):
+                print(response.results)
+                callBack(response.results)
+            case .error(_):
+                print("error")
+            }
         }).disposed(by: disposeBag)
     }
 

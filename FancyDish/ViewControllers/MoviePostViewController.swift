@@ -2,7 +2,7 @@
 //  MoviePostViewController.swift
 //  FancyDish
 //
-//  Created by SHUTO NISHIYAMA on 2021/01/14.
+//  Created by yajima toshu on 2021/01/14.
 //
 
 import UIKit

@@ -15,6 +15,7 @@
 		E55A61D525B0820100AA1AF3 /* FancyDishMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55A61D425B0820100AA1AF3 /* FancyDishMovieViewController.swift */; };
 		E56404DD25B20869004B2E05 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E56404DC25B20869004B2E05 /* Moya */; };
 		E56404DF25B20869004B2E05 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E56404DE25B20869004B2E05 /* RxMoya */; };
+		E5682A6125B421110065882B /* JsondecoderEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5682A6025B421110065882B /* JsondecoderEx.swift */; };
 		E57FA32225ADD94200E487A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FA32125ADD94200E487A7 /* AppDelegate.swift */; };
 		E57FA32625ADD94200E487A7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FA32525ADD94200E487A7 /* HomeViewController.swift */; };
 		E57FA32925ADD94200E487A7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57FA32725ADD94200E487A7 /* Home.storyboard */; };
@@ -28,7 +29,7 @@
 		E5C367BA25B2D01B0003E0CE /* Gourmet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C367B925B2D01B0003E0CE /* Gourmet.swift */; };
 		E5C367C025B2D53C0003E0CE /* PlistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C367BF25B2D53C0003E0CE /* PlistManager.swift */; };
 		E5C367C825B2DD4D0003E0CE /* GourmetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C367C725B2DD4D0003E0CE /* GourmetResponse.swift */; };
-		E5C367D025B2EE030003E0CE /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C367CF25B2EE030003E0CE /* ApiRequest.swift */; };
+		E5C367D025B2EE030003E0CE /* GourmetApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C367CF25B2EE030003E0CE /* GourmetApiRequest.swift */; };
 		E5C367D525B30F640003E0CE /* GourmetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C367D425B30F640003E0CE /* GourmetModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		E53C48DB25AF3E2A00E27388 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E55A61CF25B081E300AA1AF3 /* FancyDishMovie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FancyDishMovie.storyboard; sourceTree = "<group>"; };
 		E55A61D425B0820100AA1AF3 /* FancyDishMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyDishMovieViewController.swift; sourceTree = "<group>"; };
+		E5682A6025B421110065882B /* JsondecoderEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsondecoderEx.swift; sourceTree = "<group>"; };
 		E57FA31E25ADD94200E487A7 /* FancyDish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FancyDish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57FA32125ADD94200E487A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E57FA32525ADD94200E487A7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -73,7 +75,7 @@
 		E5C367B925B2D01B0003E0CE /* Gourmet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gourmet.swift; sourceTree = "<group>"; };
 		E5C367BF25B2D53C0003E0CE /* PlistManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistManager.swift; sourceTree = "<group>"; };
 		E5C367C725B2DD4D0003E0CE /* GourmetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourmetResponse.swift; sourceTree = "<group>"; };
-		E5C367CF25B2EE030003E0CE /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		E5C367CF25B2EE030003E0CE /* GourmetApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourmetApiRequest.swift; sourceTree = "<group>"; };
 		E5C367D425B30F640003E0CE /* GourmetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourmetModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E5682A5F25B420FB0065882B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E5682A6025B421110065882B /* JsondecoderEx.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E5682A6825B432B90065882B /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				E5C367C725B2DD4D0003E0CE /* GourmetResponse.swift */,
+				E5C367CF25B2EE030003E0CE /* GourmetApiRequest.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		E5682A6925B432DF0065882B /* TargetTypes */ = {
+			isa = PBXGroup;
+			children = (
+				E5C367B925B2D01B0003E0CE /* Gourmet.swift */,
+			);
+			path = TargetTypes;
+			sourceTree = "<group>";
+		};
 		E57FA31525ADD94200E487A7 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +156,7 @@
 		E57FA32025ADD94200E487A7 /* FancyDish */ = {
 			isa = PBXGroup;
 			children = (
+				E5682A5F25B420FB0065882B /* Extensions */,
 				E57FA32125ADD94200E487A7 /* AppDelegate.swift */,
 				E57FA32A25ADD94300E487A7 /* Assets.xcassets */,
 				E57FA32F25ADD94300E487A7 /* Info.plist */,
@@ -185,10 +213,9 @@
 		E5C367B825B2CFE00003E0CE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E5C367B925B2D01B0003E0CE /* Gourmet.swift */,
-				E5C367C725B2DD4D0003E0CE /* GourmetResponse.swift */,
 				E5C367D425B30F640003E0CE /* GourmetModel.swift */,
-				E5C367CF25B2EE030003E0CE /* ApiRequest.swift */,
+				E5682A6825B432B90065882B /* Infrastructure */,
+				E5682A6925B432DF0065882B /* TargetTypes */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -353,8 +380,9 @@
 				E5C367C025B2D53C0003E0CE /* PlistManager.swift in Sources */,
 				E53C48DC25AF3E2A00E27388 /* TabBarController.swift in Sources */,
 				E57FA32225ADD94200E487A7 /* AppDelegate.swift in Sources */,
-				E5C367D025B2EE030003E0CE /* ApiRequest.swift in Sources */,
+				E5C367D025B2EE030003E0CE /* GourmetApiRequest.swift in Sources */,
 				E5C367BA25B2D01B0003E0CE /* Gourmet.swift in Sources */,
+				E5682A6125B421110065882B /* JsondecoderEx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

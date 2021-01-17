@@ -2,7 +2,7 @@
 //  TabBarController.swift
 //  FancyDish
 //
-//  Created by SHUTO NISHIYAMA on 2021/01/13.
+//  Created by yajima toshu on 2021/01/13.
 //
 
 import UIKit

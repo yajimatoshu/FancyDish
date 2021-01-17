@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  FancyDish
 //
-//  Created by SHUTO NISHIYAMA on 2021/01/12.
+//  Created by yajima toshu on 2021/01/12.
 //
 
 import UIKit
@@ -10,6 +10,7 @@ import RxSwift
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
     let viewModel = HomeViewModel()
 
     override func viewDidLoad() {

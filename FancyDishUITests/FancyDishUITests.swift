@@ -2,7 +2,7 @@
 //  FancyDishUITests.swift
 //  FancyDishUITests
 //
-//  Created by SHUTO NISHIYAMA on 2021/01/12.
+//  Created by yajima toshu on 2021/01/12.
 //
 
 import XCTest

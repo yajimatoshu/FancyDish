@@ -2,7 +2,7 @@
 //  PlistManager.swift
 //  FancyDish
 //
-//  Created by SHUTO NISHIYAMA on 2021/01/16.
+//  Created by yajima toshu on 2021/01/16.
 //
 
 import Foundation
