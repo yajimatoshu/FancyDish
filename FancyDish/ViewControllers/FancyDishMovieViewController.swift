@@ -26,12 +26,12 @@ class FancyDishMovieViewController: UIViewController {
                 guard let wself = self else { return }
                 let storyboard: UIStoryboard = UIStoryboard(name: "MoviePost", bundle: nil)
                 if let navigationVc = storyboard.instantiateInitialViewController() as? UINavigationController,
-                    let moviePostVc = navigationVc.topViewController as? MoviePostViewController {
+                   let moviePostVc = navigationVc.topViewController as? MoviePostViewController {
                     wself.present(navigationVc, animated: true, completion: nil)
                 }
             }.disposed(by: disposeBag)
     }
- 
+    
 
 
 }

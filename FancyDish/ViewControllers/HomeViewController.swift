@@ -34,7 +34,6 @@ class HomeViewController: UIViewController {
         viewModel.fetchGourmet { [weak self] (result) in
             guard let wself = self else { return }
             wself.tableView.reloadData()
-            print("testaaa" + wself.viewModel.shopsCount.description)
         }
     }
 }
@@ -55,4 +54,12 @@ extension HomeViewController: UITableViewDataSource {
 }
 
 extension HomeViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "GourmetDetail", bundle: nil)
+        if let navigationVc = storyboard.instantiateInitialViewController() as? UINavigationController,
+           let moviePostVc = navigationVc.topViewController as? GourmetDetailViewController {
+            self.present(navigationVc, animated: true, completion: nil)
+        }
+    }
 }

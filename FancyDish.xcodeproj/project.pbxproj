@@ -25,6 +25,8 @@
 		E57FA32E25ADD94300E487A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57FA32C25ADD94300E487A7 /* LaunchScreen.storyboard */; };
 		E57FA33925ADD94300E487A7 /* FancyDishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FA33825ADD94300E487A7 /* FancyDishTests.swift */; };
 		E57FA34425ADD94300E487A7 /* FancyDishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FA34325ADD94300E487A7 /* FancyDishUITests.swift */; };
+		E5811EF525B5D2A5008D712A /* GourmetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5811EF425B5D2A5008D712A /* GourmetDetailViewController.swift */; };
+		E598200825B723F000DAEABF /* GourmetDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E598200725B723F000DAEABF /* GourmetDetail.storyboard */; };
 		E5A54A0D25B31FAC00311D14 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E5A54A0C25B31FAC00311D14 /* RxCocoa */; };
 		E5A54A0F25B31FAC00311D14 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E5A54A0E25B31FAC00311D14 /* RxSwift */; };
 		E5C367B425B2CC3D0003E0CE /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5C367B325B2CC3D0003E0CE /* Keys.plist */; };
@@ -75,6 +77,8 @@
 		E57FA33F25ADD94300E487A7 /* FancyDishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FancyDishUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57FA34325ADD94300E487A7 /* FancyDishUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyDishUITests.swift; sourceTree = "<group>"; };
 		E57FA34525ADD94300E487A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5811EF425B5D2A5008D712A /* GourmetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourmetDetailViewController.swift; sourceTree = "<group>"; };
+		E598200725B723F000DAEABF /* GourmetDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GourmetDetail.storyboard; sourceTree = "<group>"; };
 		E5C367B325B2CC3D0003E0CE /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		E5C367B925B2D01B0003E0CE /* Gourmet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gourmet.swift; sourceTree = "<group>"; };
 		E5C367BF25B2D53C0003E0CE /* PlistManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistManager.swift; sourceTree = "<group>"; };
@@ -206,10 +210,12 @@
 		E57FA35D25ADECB100E487A7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				E57FA32725ADD94200E487A7 /* Home.storyboard */,
-				E57FA32525ADD94200E487A7 /* HomeViewController.swift */,
 				E55A61CF25B081E300AA1AF3 /* FancyDishMovie.storyboard */,
 				E55A61D425B0820100AA1AF3 /* FancyDishMovieViewController.swift */,
+				E598200725B723F000DAEABF /* GourmetDetail.storyboard */,
+				E5811EF425B5D2A5008D712A /* GourmetDetailViewController.swift */,
+				E57FA32725ADD94200E487A7 /* Home.storyboard */,
+				E57FA32525ADD94200E487A7 /* HomeViewController.swift */,
 				E5129B2725B08BFB002DC0DA /* MoviePost.storyboard */,
 				E5129B2C25B08C08002DC0DA /* MoviePostViewController.swift */,
 			);
@@ -360,6 +366,7 @@
 				E55A61D025B081E300AA1AF3 /* FancyDishMovie.storyboard in Resources */,
 				E5C367B425B2CC3D0003E0CE /* Keys.plist in Resources */,
 				E57FA32B25ADD94300E487A7 /* Assets.xcassets in Resources */,
+				E598200825B723F000DAEABF /* GourmetDetail.storyboard in Resources */,
 				E57FA32925ADD94200E487A7 /* Home.storyboard in Resources */,
 				E5129B2825B08BFB002DC0DA /* MoviePost.storyboard in Resources */,
 			);
@@ -390,6 +397,7 @@
 				E5129B3225B09AD6002DC0DA /* HomeViewModel.swift in Sources */,
 				E517BB9A25B47052008EC057 /* GourmetListCell.swift in Sources */,
 				E55A61D525B0820100AA1AF3 /* FancyDishMovieViewController.swift in Sources */,
+				E5811EF525B5D2A5008D712A /* GourmetDetailViewController.swift in Sources */,
 				E5C367D525B30F640003E0CE /* GourmetModel.swift in Sources */,
 				E5129B2D25B08C08002DC0DA /* MoviePostViewController.swift in Sources */,
 				E5C367C825B2DD4D0003E0CE /* GourmetResponse.swift in Sources */,
