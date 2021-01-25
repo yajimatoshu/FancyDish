@@ -27,6 +27,8 @@ class HomeViewController: UIViewController {
     private func setupTableView() {
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.separatorColor = .systemPurple
+        tableView.separatorInset = UIEdgeInsets(top: 0, left: 3, bottom: 0, right: 11)
         tableView.register(UINib(nibName: "GourmetListCell", bundle: nil), forCellReuseIdentifier: "GourmetListCell")
     }
     
@@ -56,10 +58,9 @@ extension HomeViewController: UITableViewDataSource {
 extension HomeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let storyboard: UIStoryboard = UIStoryboard(name: "GourmetDetail", bundle: nil)
-        if let navigationVc = storyboard.instantiateInitialViewController() as? UINavigationController,
-           let moviePostVc = navigationVc.topViewController as? GourmetDetailViewController {
-            self.present(navigationVc, animated: true, completion: nil)
+        guard let gourmetResults = viewModel.gourmetResults, let navigationController = GourmetDetailViewController.configuredWith(shop: gourmetResults.shop[indexPath.row]) else {
+            return
         }
+        present(navigationController, animated: true, completion: nil)
     }
 }

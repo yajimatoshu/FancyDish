@@ -12,6 +12,8 @@
 		E5129B3225B09AD6002DC0DA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5129B3125B09AD6002DC0DA /* HomeViewModel.swift */; };
 		E517BB9A25B47052008EC057 /* GourmetListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E517BB9825B47052008EC057 /* GourmetListCell.swift */; };
 		E517BB9B25B47052008EC057 /* GourmetListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E517BB9925B47052008EC057 /* GourmetListCell.xib */; };
+		E534DA7325BF0803000C0F07 /* GourmetDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534DA7225BF0803000C0F07 /* GourmetDetailViewModel.swift */; };
+		E534DA7925BF0ECE000C0F07 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = E534DA7825BF0ECE000C0F07 /* AlamofireImage */; };
 		E53C48DC25AF3E2A00E27388 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C48DB25AF3E2A00E27388 /* TabBarController.swift */; };
 		E55A61D025B081E300AA1AF3 /* FancyDishMovie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E55A61CF25B081E300AA1AF3 /* FancyDishMovie.storyboard */; };
 		E55A61D525B0820100AA1AF3 /* FancyDishMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55A61D425B0820100AA1AF3 /* FancyDishMovieViewController.swift */; };
@@ -60,6 +62,7 @@
 		E5129B3125B09AD6002DC0DA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E517BB9825B47052008EC057 /* GourmetListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourmetListCell.swift; sourceTree = "<group>"; };
 		E517BB9925B47052008EC057 /* GourmetListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GourmetListCell.xib; sourceTree = "<group>"; };
+		E534DA7225BF0803000C0F07 /* GourmetDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourmetDetailViewModel.swift; sourceTree = "<group>"; };
 		E53C48DB25AF3E2A00E27388 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E55A61CF25B081E300AA1AF3 /* FancyDishMovie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FancyDishMovie.storyboard; sourceTree = "<group>"; };
 		E55A61D425B0820100AA1AF3 /* FancyDishMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyDishMovieViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +97,7 @@
 			files = (
 				E5A54A0D25B31FAC00311D14 /* RxCocoa in Frameworks */,
 				E56404DF25B20869004B2E05 /* RxMoya in Frameworks */,
+				E534DA7925BF0ECE000C0F07 /* AlamofireImage in Frameworks */,
 				E5A54A0F25B31FAC00311D14 /* RxSwift in Frameworks */,
 				E56404DD25B20869004B2E05 /* Moya in Frameworks */,
 			);
@@ -226,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				E5129B3125B09AD6002DC0DA /* HomeViewModel.swift */,
+				E534DA7225BF0803000C0F07 /* GourmetDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -269,6 +274,7 @@
 				E56404DE25B20869004B2E05 /* RxMoya */,
 				E5A54A0C25B31FAC00311D14 /* RxCocoa */,
 				E5A54A0E25B31FAC00311D14 /* RxSwift */,
+				E534DA7825BF0ECE000C0F07 /* AlamofireImage */,
 			);
 			productName = FancyDish;
 			productReference = E57FA31E25ADD94200E487A7 /* FancyDish.app */;
@@ -344,6 +350,7 @@
 			packageReferences = (
 				E56404DB25B20869004B2E05 /* XCRemoteSwiftPackageReference "Moya" */,
 				E5A54A0B25B31FAC00311D14 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				E534DA7725BF0ECE000C0F07 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = E57FA31F25ADD94200E487A7 /* Products */;
 			projectDirPath = "";
@@ -396,6 +403,7 @@
 				E57FA32625ADD94200E487A7 /* HomeViewController.swift in Sources */,
 				E5129B3225B09AD6002DC0DA /* HomeViewModel.swift in Sources */,
 				E517BB9A25B47052008EC057 /* GourmetListCell.swift in Sources */,
+				E534DA7325BF0803000C0F07 /* GourmetDetailViewModel.swift in Sources */,
 				E55A61D525B0820100AA1AF3 /* FancyDishMovieViewController.swift in Sources */,
 				E5811EF525B5D2A5008D712A /* GourmetDetailViewController.swift in Sources */,
 				E5C367D525B30F640003E0CE /* GourmetModel.swift in Sources */,
@@ -741,6 +749,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E534DA7725BF0ECE000C0F07 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.0;
+			};
+		};
 		E56404DB25B20869004B2E05 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
@@ -760,6 +776,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E534DA7825BF0ECE000C0F07 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E534DA7725BF0ECE000C0F07 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
 		E56404DC25B20869004B2E05 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E56404DB25B20869004B2E05 /* XCRemoteSwiftPackageReference "Moya" */;

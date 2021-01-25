@@ -12,9 +12,9 @@ class HomeViewModel {
     
     private let disposeBag = DisposeBag()
     var model = GourmetModel()
-    private (set) var gourmetResults: GourmetResponse.GourmetResponseResults?
+    private (set) var gourmetResults: GourmetResponseResults?
     
-    func fetchGourmet(callBack: @escaping (_ result: GourmetResponse.GourmetResponseResults) -> Void) {
+    func fetchGourmet(callBack: @escaping (_ result: GourmetResponseResults) -> Void) {
         model.fetchGourmet().subscribe({ [weak self] result in
             guard let wself = self else { return }
             switch result {
