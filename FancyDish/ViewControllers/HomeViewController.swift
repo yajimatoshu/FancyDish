@@ -11,7 +11,10 @@ import RxSwift
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var rightBarButton: UIBarButtonItem!
+
     let viewModel = HomeViewModel()
+    private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +40,12 @@ class HomeViewController: UIViewController {
             guard let wself = self else { return }
             wself.tableView.reloadData()
         }
+        
+        rightBarButton.rx.tap
+            .subscribe { [weak self] _ in
+                guard let wself = self else { return }
+                
+            }.disposed(by: disposeBag)
     }
 }
 

@@ -30,8 +30,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ad4-4t-Kge" secondAttribute="trailing" id="nfi-fJ-lfs"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="sqe-ee-kEV"/>
+                    <navigationItem key="navigationItem" id="sqe-ee-kEV">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="4Vt-qI-G7z"/>
+                    </navigationItem>
                     <connections>
+                        <outlet property="rightBarButton" destination="4Vt-qI-G7z" id="o6f-Wg-ONL"/>
                         <outlet property="tableView" destination="ad4-4t-Kge" id="ryY-ZN-DCk"/>
                     </connections>
                 </viewController>
