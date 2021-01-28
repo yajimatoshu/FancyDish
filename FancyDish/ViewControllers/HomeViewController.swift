@@ -44,7 +44,10 @@ class HomeViewController: UIViewController {
         rightBarButton.rx.tap
             .subscribe { [weak self] _ in
                 guard let wself = self else { return }
-                
+                guard let navigationController = SearchConditionsViewController.configuredWith() else {
+                    return
+                }
+                wself.present(navigationController, animated: true, completion: nil)
             }.disposed(by: disposeBag)
     }
 }
