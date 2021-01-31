@@ -1,19 +1,19 @@
 //
-//  FancyDishTests.swift
-//  FancyDishTests
+//  GourmetDetailViewModelTests.swift
+//  FancyDish
 //
-//  Created by yajima toshu on 2021/01/12.
-//
+//  Created by yajima toshu on 2021/01/31.
+//  
+
 
 import XCTest
 @testable import FancyDish
 
-class FancyDishTests: XCTestCase {
-    
+class GourmetDetailViewModelTests: XCTestCase {
+
     let viewModel = GourmetDetailViewModel()
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
         viewModel.gourmetDetail = GourmetResponseResults.Shop(id: "1",
                                                           name: "高級テスト",
                                                           logoImage: "http://Logo",
@@ -43,5 +43,6 @@ class FancyDishTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+
 
 }

@@ -27,7 +27,7 @@
 		E57FA32925ADD94200E487A7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57FA32725ADD94200E487A7 /* Home.storyboard */; };
 		E57FA32B25ADD94300E487A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57FA32A25ADD94300E487A7 /* Assets.xcassets */; };
 		E57FA32E25ADD94300E487A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57FA32C25ADD94300E487A7 /* LaunchScreen.storyboard */; };
-		E57FA33925ADD94300E487A7 /* FancyDishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FA33825ADD94300E487A7 /* FancyDishTests.swift */; };
+		E57FA33925ADD94300E487A7 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FA33825ADD94300E487A7 /* HomeViewModelTests.swift */; };
 		E57FA34425ADD94300E487A7 /* FancyDishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FA34325ADD94300E487A7 /* FancyDishUITests.swift */; };
 		E5811EF525B5D2A5008D712A /* GourmetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5811EF425B5D2A5008D712A /* GourmetDetailViewController.swift */; };
 		E598200825B723F000DAEABF /* GourmetDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E598200725B723F000DAEABF /* GourmetDetail.storyboard */; };
@@ -41,6 +41,7 @@
 		E5C367C825B2DD4D0003E0CE /* GourmetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C367C725B2DD4D0003E0CE /* GourmetResponse.swift */; };
 		E5C367D025B2EE030003E0CE /* GourmetApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C367CF25B2EE030003E0CE /* GourmetApiRequest.swift */; };
 		E5C367D525B30F640003E0CE /* GourmetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C367D425B30F640003E0CE /* GourmetModel.swift */; };
+		E5F7298825C689F300A8DECD /* GourmetDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F7298725C689F300A8DECD /* GourmetDetailViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +82,7 @@
 		E57FA32D25ADD94300E487A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E57FA32F25ADD94300E487A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E57FA33425ADD94300E487A7 /* FancyDishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FancyDishTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E57FA33825ADD94300E487A7 /* FancyDishTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyDishTests.swift; sourceTree = "<group>"; };
+		E57FA33825ADD94300E487A7 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		E57FA33A25ADD94300E487A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E57FA33F25ADD94300E487A7 /* FancyDishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FancyDishUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57FA34325ADD94300E487A7 /* FancyDishUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyDishUITests.swift; sourceTree = "<group>"; };
@@ -96,6 +97,7 @@
 		E5C367C725B2DD4D0003E0CE /* GourmetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourmetResponse.swift; sourceTree = "<group>"; };
 		E5C367CF25B2EE030003E0CE /* GourmetApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourmetApiRequest.swift; sourceTree = "<group>"; };
 		E5C367D425B30F640003E0CE /* GourmetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourmetModel.swift; sourceTree = "<group>"; };
+		E5F7298725C689F300A8DECD /* GourmetDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourmetDetailViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,7 +208,8 @@
 		E57FA33725ADD94300E487A7 /* FancyDishTests */ = {
 			isa = PBXGroup;
 			children = (
-				E57FA33825ADD94300E487A7 /* FancyDishTests.swift */,
+				E57FA33825ADD94300E487A7 /* HomeViewModelTests.swift */,
+				E5F7298725C689F300A8DECD /* GourmetDetailViewModelTests.swift */,
 				E57FA33A25ADD94300E487A7 /* Info.plist */,
 			);
 			path = FancyDishTests;
@@ -438,7 +441,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E57FA33925ADD94300E487A7 /* FancyDishTests.swift in Sources */,
+				E57FA33925ADD94300E487A7 /* HomeViewModelTests.swift in Sources */,
+				E5F7298825C689F300A8DECD /* GourmetDetailViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
