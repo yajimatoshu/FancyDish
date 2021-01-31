@@ -42,6 +42,7 @@
 		E5C367D025B2EE030003E0CE /* GourmetApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C367CF25B2EE030003E0CE /* GourmetApiRequest.swift */; };
 		E5C367D525B30F640003E0CE /* GourmetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C367D425B30F640003E0CE /* GourmetModel.swift */; };
 		E5F7298825C689F300A8DECD /* GourmetDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F7298725C689F300A8DECD /* GourmetDetailViewModelTests.swift */; };
+		E5F7299C25C6B2FC00A8DECD /* SearchConditionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F7299B25C6B2FC00A8DECD /* SearchConditionsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		E5C367CF25B2EE030003E0CE /* GourmetApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourmetApiRequest.swift; sourceTree = "<group>"; };
 		E5C367D425B30F640003E0CE /* GourmetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourmetModel.swift; sourceTree = "<group>"; };
 		E5F7298725C689F300A8DECD /* GourmetDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourmetDetailViewModelTests.swift; sourceTree = "<group>"; };
+		E5F7299B25C6B2FC00A8DECD /* SearchConditionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchConditionsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,10 +235,10 @@
 				E5811EF425B5D2A5008D712A /* GourmetDetailViewController.swift */,
 				E57FA32725ADD94200E487A7 /* Home.storyboard */,
 				E57FA32525ADD94200E487A7 /* HomeViewController.swift */,
-				E59F9B4025C1B55500AB8C59 /* SearchConditionsViewController.swift */,
-				E59F9B4525C1B56900AB8C59 /* SearchConditions.storyboard */,
 				E5129B2725B08BFB002DC0DA /* MoviePost.storyboard */,
 				E5129B2C25B08C08002DC0DA /* MoviePostViewController.swift */,
+				E59F9B4525C1B56900AB8C59 /* SearchConditions.storyboard */,
+				E59F9B4025C1B55500AB8C59 /* SearchConditionsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -244,8 +246,9 @@
 		E57FA35E25ADECBB00E487A7 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				E5129B3125B09AD6002DC0DA /* HomeViewModel.swift */,
 				E534DA7225BF0803000C0F07 /* GourmetDetailViewModel.swift */,
+				E5129B3125B09AD6002DC0DA /* HomeViewModel.swift */,
+				E5F7299B25C6B2FC00A8DECD /* SearchConditionsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				E57FA32625ADD94200E487A7 /* HomeViewController.swift in Sources */,
 				E5129B3225B09AD6002DC0DA /* HomeViewModel.swift in Sources */,
 				E517BB9A25B47052008EC057 /* GourmetListCell.swift in Sources */,
+				E5F7299C25C6B2FC00A8DECD /* SearchConditionsViewModel.swift in Sources */,
 				E534DA7325BF0803000C0F07 /* GourmetDetailViewModel.swift in Sources */,
 				E55A61D525B0820100AA1AF3 /* FancyDishMovieViewController.swift in Sources */,
 				E5811EF525B5D2A5008D712A /* GourmetDetailViewController.swift in Sources */,

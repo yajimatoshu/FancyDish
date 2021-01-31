@@ -12,6 +12,8 @@ class SearchConditionsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    private let viewModel = SearchConditionsViewModel()
+    
     static func configuredWith() -> UINavigationController? {
         let storyboard: UIStoryboard = UIStoryboard(name: "SearchConditions", bundle: nil)
         if let navigationVc = storyboard.instantiateInitialViewController() as? UINavigationController,
@@ -49,16 +51,7 @@ extension SearchConditionsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        switch section {
-        case 0:
-            return "キーワード"
-        case 1:
-            return "エリア"
-        case 2:
-            return "ジャンル"
-        default:
-            return "その他"
-        }
+        return viewModel.sectionTitle(section: section)
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
