@@ -38,6 +38,16 @@
                ReferencedContainer = "container:FancyDish.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E57FA33E25ADD94300E487A7"
+               BuildableName = "FancyDishUITests.xctest"
+               BlueprintName = "FancyDishUITests"
+               ReferencedContainer = "container:FancyDish.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

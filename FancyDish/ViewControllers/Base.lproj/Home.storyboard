@@ -31,7 +31,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sqe-ee-kEV">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="4Vt-qI-G7z"/>
+                        <barButtonItem key="rightBarButtonItem" title="条件" id="4Vt-qI-G7z">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="HomeVIewController_right_bar_button"/>
+                            </userDefinedRuntimeAttributes>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="rightBarButton" destination="4Vt-qI-G7z" id="o6f-Wg-ONL"/>
