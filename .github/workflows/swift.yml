@@ -14,14 +14,28 @@ jobs:
       run: sudo xcode-select -s '/Applications/Xcode_12.3.app/Contents/Developer'
     - name: Show Xcode version
       run: xcodebuild -version
-      # Run build
+      
+    # Generate Keys.plist (Step 3)
+    - name:  Translate secrets of base64 into json
+      env:
+          KEYS: ${{ secrets.KEYS_JSON }}
+      run:
+          echo $KEYS | base64 --decode > ./FancyDish/output.json
+    - name:  Translate json into plist and generate Keys.plist
+      run:
+        plutil -convert xml1 ./FancyDish/output.json -o ./FancyDish/Keys.plist
+    - name: Remove json file (Step 4)
+      run:
+        rm ./FancyDish/output.json
+
+    # Run build
     - name: Build
       run: xcodebuild
             -scheme FancyDish
             -sdk iphonesimulator
             -configuration Debug
             build
-      # Run unit test
+    # Run unit test
     - name: Run tests
       run: xcodebuild
             -scheme FancyDish
