@@ -10,10 +10,11 @@ import UIKit
 
 class SearchConditionsViewController: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak private var tableView: UITableView!
     private let viewModel = SearchConditionsViewModel()
-    
+    private let pickerView: UIPickerView = UIPickerView()
+    private var toolBar = UIToolbar()
+
     static func configuredWith() -> UINavigationController? {
         let storyboard: UIStoryboard = UIStoryboard(name: "SearchConditions", bundle: nil)
         if let navigationVc = storyboard.instantiateInitialViewController() as? UINavigationController,
@@ -28,6 +29,7 @@ class SearchConditionsViewController: UIViewController {
         
         setupTableView()
         setupNavigationBar()
+        setupPickerView()
     }
     
     private func setupNavigationBar() {
@@ -41,6 +43,30 @@ class SearchConditionsViewController: UIViewController {
         tableView.separatorColor = .systemPurple
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 3, bottom: 0, right: 11)
         tableView.register(UINib(nibName: "SearchConditionTextFieldCell", bundle: nil), forCellReuseIdentifier: "SearchConditionTextFieldCell")
+    }
+    
+    private func setupPickerView() {
+        // ピッカー設定
+        pickerView.delegate = self
+        pickerView.dataSource = self
+        
+        // 決定バーの生成
+        let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 35))
+        let spacelItem = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
+        let doneItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done))
+        toolbar.setItems([spacelItem, doneItem], animated: true)
+        self.toolBar = toolbar
+    }
+    
+    private func bind() {
+        viewModel.fetchMiddleArea { [weak self] (result) in
+            guard let wself = self else { return }
+            wself.tableView.reloadData()
+        }
+    }
+
+    @objc private func done() {
+        
     }
 }
 
@@ -59,6 +85,12 @@ extension SearchConditionsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "SearchConditionTextFieldCell") as? SearchConditionTextFieldCell {
+            switch indexPath.row {
+            case 0:
+                return cell
+            default:
+                return cell
+            }
             return cell
         }
         return UITableViewCell()
@@ -66,5 +98,21 @@ extension SearchConditionsViewController: UITableViewDataSource {
 }
 
 extension SearchConditionsViewController: UITableViewDelegate {
+    
+}
+
+extension SearchConditionsViewController: UIPickerViewDelegate {
+    
+}
+
+extension SearchConditionsViewController: UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        <#code#>
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        <#code#>
+    }
+    
     
 }

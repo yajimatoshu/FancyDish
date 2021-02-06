@@ -9,6 +9,8 @@
 import UIKit
 
 class SearchConditionTextFieldCell: UITableViewCell {
+    @IBOutlet weak var textField: UITextField!
+    private var viewModel: SearchConditionsViewModel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -18,7 +20,10 @@ class SearchConditionTextFieldCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+    }
+    
+    func configure(_ viewModel: SearchConditionsViewModel) {
+        self.viewModel = viewModel
     }
     
 }

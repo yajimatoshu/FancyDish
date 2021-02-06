@@ -13,4 +13,7 @@ class GourmetModel {
     func fetchGourmet() -> Single<GourmetResponse> {
         return GourmetApiRequest().request(config: Gourmet.gourmet)
     }
+    func fetchMiddleArea() -> Single<MiddleAreaResponse> {
+        return GourmetApiRequest().request(config: Gourmet.middleArea)
+    }
 }

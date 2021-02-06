@@ -10,6 +10,7 @@ import Moya
 
 enum Gourmet {
     case gourmet
+    case middleArea
 }
 
 extension Gourmet: TargetType {
@@ -21,12 +22,16 @@ extension Gourmet: TargetType {
         switch self {
         case .gourmet:
             return "gourmet/v1/"
+        case .middleArea:
+            return "middle_area/v1/"
         }
     }
     
     var method: Moya.Method {
         switch self {
         case .gourmet:
+            return .get
+        case .middleArea:
             return .get
         }
     }
@@ -43,6 +48,8 @@ extension Gourmet: TargetType {
                          "budget": "B013, B014",
                          "count": "100"]
             return .requestParameters(parameters: param, encoding: URLEncoding.default)
+        case .middleArea:
+            return .requestParameters(parameters: ["":""], encoding: URLEncoding.default)
         }
     }
     

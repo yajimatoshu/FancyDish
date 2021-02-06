@@ -41,6 +41,7 @@
 		E5C367C825B2DD4D0003E0CE /* GourmetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C367C725B2DD4D0003E0CE /* GourmetResponse.swift */; };
 		E5C367D025B2EE030003E0CE /* GourmetApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C367CF25B2EE030003E0CE /* GourmetApiRequest.swift */; };
 		E5C367D525B30F640003E0CE /* GourmetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C367D425B30F640003E0CE /* GourmetModel.swift */; };
+		E5E6D19725CE899000127A80 /* MiddleAreaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E6D19625CE899000127A80 /* MiddleAreaResponse.swift */; };
 		E5F7298825C689F300A8DECD /* GourmetDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F7298725C689F300A8DECD /* GourmetDetailViewModelTests.swift */; };
 		E5F7299C25C6B2FC00A8DECD /* SearchConditionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F7299B25C6B2FC00A8DECD /* SearchConditionsViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -98,6 +99,7 @@
 		E5C367C725B2DD4D0003E0CE /* GourmetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourmetResponse.swift; sourceTree = "<group>"; };
 		E5C367CF25B2EE030003E0CE /* GourmetApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourmetApiRequest.swift; sourceTree = "<group>"; };
 		E5C367D425B30F640003E0CE /* GourmetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourmetModel.swift; sourceTree = "<group>"; };
+		E5E6D19625CE899000127A80 /* MiddleAreaResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleAreaResponse.swift; sourceTree = "<group>"; };
 		E5F7298725C689F300A8DECD /* GourmetDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourmetDetailViewModelTests.swift; sourceTree = "<group>"; };
 		E5F7299B25C6B2FC00A8DECD /* SearchConditionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchConditionsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,8 +156,9 @@
 		E5682A6825B432B90065882B /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
-				E5C367C725B2DD4D0003E0CE /* GourmetResponse.swift */,
 				E5C367CF25B2EE030003E0CE /* GourmetApiRequest.swift */,
+				E5C367C725B2DD4D0003E0CE /* GourmetResponse.swift */,
+				E5E6D19625CE899000127A80 /* MiddleAreaResponse.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				E55A61D525B0820100AA1AF3 /* FancyDishMovieViewController.swift in Sources */,
 				E5811EF525B5D2A5008D712A /* GourmetDetailViewController.swift in Sources */,
 				E5C367D525B30F640003E0CE /* GourmetModel.swift in Sources */,
+				E5E6D19725CE899000127A80 /* MiddleAreaResponse.swift in Sources */,
 				E5129B2D25B08C08002DC0DA /* MoviePostViewController.swift in Sources */,
 				E5C367C825B2DD4D0003E0CE /* GourmetResponse.swift in Sources */,
 				E5C367C025B2D53C0003E0CE /* PlistManager.swift in Sources */,
