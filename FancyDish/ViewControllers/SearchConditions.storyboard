@@ -30,8 +30,15 @@
                             <constraint firstItem="f7h-bb-SBH" firstAttribute="top" secondItem="oC7-K2-XMb" secondAttribute="top" id="zia-4a-DZq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="cRd-HS-0er"/>
+                    <navigationItem key="navigationItem" id="cRd-HS-0er">
+                        <barButtonItem key="rightBarButtonItem" title="閉じる" id="kxU-5V-9py">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="SearchConditionsViewController_right_bar_button"/>
+                            </userDefinedRuntimeAttributes>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="closeButton" destination="kxU-5V-9py" id="SGs-jN-sgK"/>
                         <outlet property="tableView" destination="f7h-bb-SBH" id="SST-6o-Zp8"/>
                     </connections>
                 </viewController>

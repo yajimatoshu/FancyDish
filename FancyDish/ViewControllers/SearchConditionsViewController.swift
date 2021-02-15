@@ -6,13 +6,17 @@
 //  
 
 
+import RxSwift
 import UIKit
 
 class SearchConditionsViewController: UIViewController {
     
     @IBOutlet weak private var tableView: UITableView!
+    @IBOutlet weak var closeButton: UIBarButtonItem!
+    
     private let viewModel = SearchConditionsViewModel()
     private let pickerView: UIPickerView = UIPickerView()
+    private let disposeBag = DisposeBag()
     private var toolBar = UIToolbar()
 
     static func configuredWith() -> UINavigationController? {
@@ -30,6 +34,7 @@ class SearchConditionsViewController: UIViewController {
         setupTableView()
         setupNavigationBar()
         setupPickerView()
+        bind()
     }
     
     private func setupNavigationBar() {
@@ -59,6 +64,12 @@ class SearchConditionsViewController: UIViewController {
     }
     
     private func bind() {
+        closeButton.rx.tap
+            .subscribe { [weak self] _ in
+                guard let wself = self else { return }
+                wself.dismiss(animated: true, completion: nil)
+            }.disposed(by: disposeBag)
+        
         viewModel.fetchMiddleArea { [weak self] (result) in
             guard let wself = self else { return }
             wself.tableView.reloadData()
@@ -107,11 +118,11 @@ extension SearchConditionsViewController: UIPickerViewDelegate {
 
 extension SearchConditionsViewController: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        <#code#>
+        return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        <#code#>
+        return 1
     }
     
     

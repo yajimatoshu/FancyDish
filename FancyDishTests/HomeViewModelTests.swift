@@ -24,7 +24,7 @@ class HomeViewModelTests: XCTestCase {
         viewModel.fetchGourmet { result in
             XCTAssertNotNil(result)
             // stubにするべきか。
-            XCTAssertEqual(self.viewModel.shopsCount, 60)
+            XCTAssertEqual(self.viewModel.shopsCount, 59)
             exp.fulfill()
         }
         // 5秒以内にfulfillが呼び出されないとエラー

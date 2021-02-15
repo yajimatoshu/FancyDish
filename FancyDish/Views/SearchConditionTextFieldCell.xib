@@ -18,6 +18,7 @@
                 <subviews>
                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kPK-6Z-Fue">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <accessibility key="accessibilityConfiguration" identifier="condition_textfield"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
@@ -30,6 +31,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <accessibility key="accessibilityConfiguration" identifier="search_text_cell"/>
             <connections>
                 <outlet property="textField" destination="kPK-6Z-Fue" id="99Q-ip-ySx"/>
             </connections>
