@@ -14,6 +14,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var rightBarButton: UIBarButtonItem!
 
     let viewModel = HomeViewModel()
+    let genre: String?
     private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {

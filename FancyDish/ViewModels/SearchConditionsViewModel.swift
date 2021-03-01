@@ -31,6 +31,7 @@ class SearchConditionsViewModel {
     private let model = GourmetModel()
     private let disposeBag = DisposeBag()
     private (set)var middleAreas: [MiddleArea]?
+    private (set)var genres: [Genre]?
     
     func sectionTitle(section: Int) -> String {
         return ConditionsMenu.allCases[section].title
@@ -42,6 +43,19 @@ class SearchConditionsViewModel {
             switch result {
             case .success(let response):
                 wself.middleAreas = response.results.middleArea
+                callBack(response.results)
+            case .error(_):
+                print("error")
+            }
+        }).disposed(by: disposeBag)
+    }
+    
+    func fetchGenre(callBack: @escaping (_ result: GenreResponseResults) -> Void) {
+        model.fetchGenre().subscribe({ [weak self] result in
+            guard let wself = self else { return }
+            switch result {
+            case .success(let response):
+                wself.genres = response.results.genre
                 callBack(response.results)
             case .error(_):
                 print("error")

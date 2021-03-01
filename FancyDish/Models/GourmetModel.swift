@@ -11,9 +11,14 @@ import RxSwift
 
 class GourmetModel {
     func fetchGourmet() -> Single<GourmetResponse> {
-        return GourmetApiRequest().request(config: Gourmet.gourmet)
+        return GourmetApiRequest().request(config: .gourmet)
     }
+    
     func fetchMiddleArea() -> Single<MiddleAreaResponse> {
-        return GourmetApiRequest().request(config: Gourmet.middleArea)
+        return GourmetApiRequest().request(config: .middleArea)
+    }
+    
+    func fetchGenre() -> Single<GenreResponse> {
+        return GourmetApiRequest().request(config: .genre)
     }
 }

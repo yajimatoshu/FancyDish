@@ -11,6 +11,7 @@ import Moya
 enum Gourmet {
     case gourmet
     case middleArea
+    case genre
 }
 
 extension Gourmet: TargetType {
@@ -24,6 +25,8 @@ extension Gourmet: TargetType {
             return "gourmet/v1/"
         case .middleArea:
             return "middle_area/v1/"
+        case .genre:
+            return "genre/v1/"
         }
     }
     
@@ -32,6 +35,8 @@ extension Gourmet: TargetType {
         case .gourmet:
             return .get
         case .middleArea:
+            return .get
+        case .genre:
             return .get
         }
     }
@@ -52,6 +57,10 @@ extension Gourmet: TargetType {
             let param = ["key": PlistManager.gourmetApiKey ?? "",
                          "format": "json",
                          "count": "100"]
+            return .requestParameters(parameters: param, encoding: URLEncoding.default)
+        case .genre:
+            let param = ["key": PlistManager.gourmetApiKey ?? "",
+                         "format": "json"]
             return .requestParameters(parameters: param, encoding: URLEncoding.default)
         }
     }

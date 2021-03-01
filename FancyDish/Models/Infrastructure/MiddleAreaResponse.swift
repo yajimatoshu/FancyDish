@@ -5,7 +5,6 @@
 //  Created by yajima toshu on 2021/02/06.
 //  
 
-
 import Foundation
 
 struct MiddleAreaResponse: Codable {

@@ -36,6 +36,7 @@
 		E59F9B4625C1B56900AB8C59 /* SearchConditions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E59F9B4525C1B56900AB8C59 /* SearchConditions.storyboard */; };
 		E5A54A0D25B31FAC00311D14 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E5A54A0C25B31FAC00311D14 /* RxCocoa */; };
 		E5A54A0F25B31FAC00311D14 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E5A54A0E25B31FAC00311D14 /* RxSwift */; };
+		E5B1CFD425ED4281000F4521 /* GenreResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B1CFD325ED4281000F4521 /* GenreResponse.swift */; };
 		E5C367B425B2CC3D0003E0CE /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5C367B325B2CC3D0003E0CE /* Keys.plist */; };
 		E5C367BA25B2D01B0003E0CE /* Gourmet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C367B925B2D01B0003E0CE /* Gourmet.swift */; };
 		E5C367C025B2D53C0003E0CE /* PlistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C367BF25B2D53C0003E0CE /* PlistManager.swift */; };
@@ -95,6 +96,7 @@
 		E598200725B723F000DAEABF /* GourmetDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GourmetDetail.storyboard; sourceTree = "<group>"; };
 		E59F9B4025C1B55500AB8C59 /* SearchConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchConditionsViewController.swift; sourceTree = "<group>"; };
 		E59F9B4525C1B56900AB8C59 /* SearchConditions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchConditions.storyboard; sourceTree = "<group>"; };
+		E5B1CFD325ED4281000F4521 /* GenreResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreResponse.swift; sourceTree = "<group>"; };
 		E5C367B325B2CC3D0003E0CE /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		E5C367B925B2D01B0003E0CE /* Gourmet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gourmet.swift; sourceTree = "<group>"; };
 		E5C367BF25B2D53C0003E0CE /* PlistManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistManager.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				E5C367CF25B2EE030003E0CE /* GourmetApiRequest.swift */,
 				E5C367C725B2DD4D0003E0CE /* GourmetResponse.swift */,
 				E5E6D19625CE899000127A80 /* MiddleAreaResponse.swift */,
+				E5B1CFD325ED4281000F4521 /* GenreResponse.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 			files = (
 				E51EF8E525C2F3F80094A4C1 /* SearchConditionTextFieldCell.swift in Sources */,
 				E57FA32625ADD94200E487A7 /* HomeViewController.swift in Sources */,
+				E5B1CFD425ED4281000F4521 /* GenreResponse.swift in Sources */,
 				E5129B3225B09AD6002DC0DA /* HomeViewModel.swift in Sources */,
 				E517BB9A25B47052008EC057 /* GourmetListCell.swift in Sources */,
 				E5F7299C25C6B2FC00A8DECD /* SearchConditionsViewModel.swift in Sources */,
