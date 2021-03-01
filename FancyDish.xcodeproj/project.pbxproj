@@ -17,6 +17,7 @@
 		E534DA7325BF0803000C0F07 /* GourmetDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534DA7225BF0803000C0F07 /* GourmetDetailViewModel.swift */; };
 		E534DA7925BF0ECE000C0F07 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = E534DA7825BF0ECE000C0F07 /* AlamofireImage */; };
 		E53C48DC25AF3E2A00E27388 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C48DB25AF3E2A00E27388 /* TabBarController.swift */; };
+		E559A34F25DAB8D400B28116 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E559A34E25DAB8D400B28116 /* SnapshotHelper.swift */; };
 		E55A61D025B081E300AA1AF3 /* FancyDishMovie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E55A61CF25B081E300AA1AF3 /* FancyDishMovie.storyboard */; };
 		E55A61D525B0820100AA1AF3 /* FancyDishMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55A61D425B0820100AA1AF3 /* FancyDishMovieViewController.swift */; };
 		E56404DD25B20869004B2E05 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E56404DC25B20869004B2E05 /* Moya */; };
@@ -73,6 +74,7 @@
 		E51EF8E425C2F3F80094A4C1 /* SearchConditionTextFieldCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchConditionTextFieldCell.xib; sourceTree = "<group>"; };
 		E534DA7225BF0803000C0F07 /* GourmetDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourmetDetailViewModel.swift; sourceTree = "<group>"; };
 		E53C48DB25AF3E2A00E27388 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		E559A34E25DAB8D400B28116 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		E55A61CF25B081E300AA1AF3 /* FancyDishMovie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FancyDishMovie.storyboard; sourceTree = "<group>"; };
 		E55A61D425B0820100AA1AF3 /* FancyDishMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyDishMovieViewController.swift; sourceTree = "<group>"; };
 		E5682A6025B421110065882B /* JsondecoderEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsondecoderEx.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 		E57FA34225ADD94300E487A7 /* FancyDishUITests */ = {
 			isa = PBXGroup;
 			children = (
+				E559A34E25DAB8D400B28116 /* SnapshotHelper.swift */,
 				E57FA34325ADD94300E487A7 /* HomeViewControllerUITests.swift */,
 				E57FA34525ADD94300E487A7 /* Info.plist */,
 			);
@@ -459,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E57FA34425ADD94300E487A7 /* HomeViewControllerUITests.swift in Sources */,
+				E559A34F25DAB8D400B28116 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,8 +711,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S8WY4ZH996;
 				INFOPLIST_FILE = FancyDishUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -729,8 +735,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S8WY4ZH996;
 				INFOPLIST_FILE = FancyDishUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

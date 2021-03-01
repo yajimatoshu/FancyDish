@@ -30,10 +30,10 @@ class SearchConditionsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        setupPickerView()
         setupTableView()
         setupNavigationBar()
-        setupPickerView()
         bind()
     }
     
@@ -73,10 +73,14 @@ class SearchConditionsViewController: UIViewController {
         viewModel.fetchMiddleArea { [weak self] (result) in
             guard let wself = self else { return }
             wself.tableView.reloadData()
+            wself.pickerView.reloadAllComponents()
         }
     }
 
     @objc private func done() {
+        if let cell = tableView.cellForRow(at: IndexPath(row: 0, section: 1)) as? SearchConditionTextFieldCell {
+            cell.textField.endEditing(true)
+        }
         
     }
 }
@@ -96,9 +100,10 @@ extension SearchConditionsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "SearchConditionTextFieldCell") as? SearchConditionTextFieldCell {
-            switch indexPath.row {
-            case 0:
-                return cell
+            switch indexPath.section {
+            case 1:
+                cell.textField.inputView = pickerView
+                cell.textField.inputAccessoryView = toolBar
             default:
                 return cell
             }
@@ -113,7 +118,11 @@ extension SearchConditionsViewController: UITableViewDelegate {
 }
 
 extension SearchConditionsViewController: UIPickerViewDelegate {
-    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if let cell = tableView.cellForRow(at: IndexPath(row: 0, section: 1)) as? SearchConditionTextFieldCell {
+            cell.textField.text = viewModel.middleAreas?[row].name
+        }
+    }
 }
 
 extension SearchConditionsViewController: UIPickerViewDataSource {
@@ -122,8 +131,12 @@ extension SearchConditionsViewController: UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 1
+        return viewModel.middleAreas?.count ?? 0
     }
     
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return viewModel.middleAreas?[row].name
+    }
     
 }

@@ -49,7 +49,10 @@ extension Gourmet: TargetType {
                          "count": "100"]
             return .requestParameters(parameters: param, encoding: URLEncoding.default)
         case .middleArea:
-            return .requestParameters(parameters: ["":""], encoding: URLEncoding.default)
+            let param = ["key": PlistManager.gourmetApiKey ?? "",
+                         "format": "json",
+                         "count": "100"]
+            return .requestParameters(parameters: param, encoding: URLEncoding.default)
         }
     }
     

@@ -13,8 +13,8 @@ struct MiddleAreaResponse: Codable {
 }
 
 struct MiddleAreaResponseResults: Codable {
-    let resultsAvailable: Int
-    let resultsReturned: String
+    let resultsAvailable: Int?
+    let resultsReturned: String?
     let middleArea: [MiddleArea]
 }
 
